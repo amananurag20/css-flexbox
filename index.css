@@ -1,0 +1,39 @@
+.container{
+
+    border: 3px solid black;
+    width: 900px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.box{
+    border: 2px solid black;
+    width: 150px;
+    height: 100px;
+}
+
+#red{
+    background-color: red;
+}
+
+#green{
+    background-color: green;
+}
+
+#orange{
+    background-color: orange;
+}
+
+#blue{
+    background-color: blue;
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+#violet{
+    background-color: violet;
+}

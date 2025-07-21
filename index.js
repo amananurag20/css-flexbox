@@ -1,12 +1,9 @@
-function order(item,payment){
-    if(payment){
-        console.log( `this order ${item} is placed`)
-    }else{
-        console.log("Order is not placed")
-    }
-};
+fetch("https://dog.ceo/api/breeds/image/random").then((data)=>{
+    console.log("Data",data);
+    return data.json()
+}).then((data)=>{
+    console.log(data)
+})
 
-order("lunchbox",true);
-order("mobile",false);
 
-console.log(order)
+

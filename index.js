@@ -1,15 +1,31 @@
-console.log("hiihi");
+const image=document.querySelector("#ben10");
 
-const fetchData=async()=> {
-  try {
-    const response = await fetch("https://dog.ceo/api/breeds/image/random"); //1 sec
 
-    const data = await response.json();
-    console.log(data);
-  } catch (e) {
-    console.log(e);
+
+const btn= document.querySelector(".btn");
+console.log(btn);
+
+
+btn.onclick=()=>{
+
+  if(image.src=="https://i.pinimg.com/736x/cf/35/91/cf3591df9bfec3802311fbf497c6ba84.jpg"){
+
+    image.src="https://media.istockphoto.com/id/1560833158/photo/game-controller-with-purple-lit-keyboard-amidst-various-wireless-devices.jpg?s=612x612&w=0&k=20&c=eOYotPVhXSiFkrSLHsDjpUENG3ev7bnbt-iK6RS6KAM="
+  } else{
+
+      image.src="https://i.pinimg.com/736x/cf/35/91/cf3591df9bfec3802311fbf497c6ba84.jpg"
   }
-}
-fetchData();
 
-console.log("byee");
+    
+}
+
+
+
+const nameInput=document.querySelector("#name-input");
+
+nameInput.addEventListener("input",(event)=>{
+
+    console.log("event triggered");
+    console.log(event)
+    console.log(event.target.value)
+})

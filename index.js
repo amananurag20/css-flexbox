@@ -1,31 +1,46 @@
-const image=document.querySelector("#ben10");
+const heading= document.querySelector(".head");
+
+console.dir(heading);
 
 
+heading.onclick=function(){
+    alert("hi")
+}
 
-const btn= document.querySelector(".btn");
-console.log(btn);
+heading.onmouseover=function(){
+    console.log("hoverrrrrr")
+}
+
+const btn=document.querySelector(".btn");
 
 
 btn.onclick=()=>{
+    const img=document.querySelector("#ben10");
 
-  if(image.src=="https://i.pinimg.com/736x/cf/35/91/cf3591df9bfec3802311fbf497c6ba84.jpg"){
+    if(img.src=="https://media.istockphoto.com/id/1334436084/photo/top-down-view-of-colorful-illuminated-gaming-accessories-laying-on-table.jpg?s=612x612&w=0&k=20&c=E9xnbAZoBS5LlUX0q-zxT_3m6gEZpyB2k51_U4LLMNs="){
 
-    image.src="https://media.istockphoto.com/id/1560833158/photo/game-controller-with-purple-lit-keyboard-amidst-various-wireless-devices.jpg?s=612x612&w=0&k=20&c=eOYotPVhXSiFkrSLHsDjpUENG3ev7bnbt-iK6RS6KAM="
-  } else{
+        img.src="https://assets-prd.ignimgs.com/2022/09/23/top25modernpcgames-blogroll-1663951042311.jpg"
+    }else{
 
-      image.src="https://i.pinimg.com/736x/cf/35/91/cf3591df9bfec3802311fbf497c6ba84.jpg"
-  }
+        img.src="https://media.istockphoto.com/id/1334436084/photo/top-down-view-of-colorful-illuminated-gaming-accessories-laying-on-table.jpg?s=612x612&w=0&k=20&c=E9xnbAZoBS5LlUX0q-zxT_3m6gEZpyB2k51_U4LLMNs="
+
+    }
 
     
 }
 
 
+setInterval(()=>{
 
-const nameInput=document.querySelector("#name-input");
+    const img=document.querySelector("#ben10");
 
-nameInput.addEventListener("input",(event)=>{
+    if(img.src=="https://media.istockphoto.com/id/1334436084/photo/top-down-view-of-colorful-illuminated-gaming-accessories-laying-on-table.jpg?s=612x612&w=0&k=20&c=E9xnbAZoBS5LlUX0q-zxT_3m6gEZpyB2k51_U4LLMNs="){
 
-    console.log("event triggered");
-    console.log(event)
-    console.log(event.target.value)
-})
+        img.src="https://assets-prd.ignimgs.com/2022/09/23/top25modernpcgames-blogroll-1663951042311.jpg"
+    }else{
+
+        img.src="https://media.istockphoto.com/id/1334436084/photo/top-down-view-of-colorful-illuminated-gaming-accessories-laying-on-table.jpg?s=612x612&w=0&k=20&c=E9xnbAZoBS5LlUX0q-zxT_3m6gEZpyB2k51_U4LLMNs="
+
+    }
+
+},2000)
